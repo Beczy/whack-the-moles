@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('images/2684251.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.beginning-div {
+  background: rgba(76, 175, 80, 0.9);
+  margin: 0 auto;
+  margin-top: 160px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.game-field {
+  display: none;
+  position: relative;
+  height: 700px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+}
+
+.current-score {
+  background: #2E7D32;
+  border-radius: 20px;
+  padding: 15px 25px;
+  font-size: 18px;
+  margin: 20px auto;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start-btn,
+.stop {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start-btn {
+  background-color: #4caf50;
+  color: white;
+}
+.start-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.stop {
+  background-color: darkred;
+  color: white;
+  position: absolute;
+  top: 410px;
+  left: 200px;
+  border-radius: 50px;
+}
+.stop:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+.holes {
+  display: none;
+  width: 160px;
+  position: absolute;
+}
+
+.moles {
+  display: none;
+  width: 100px;
+  position: absolute;
+  cursor: pointer;
+  animation: popUp 0.3s ease-out;
+}
+
+.score {
+  position: absolute;
+  top: 320px;
+  left: 200px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
